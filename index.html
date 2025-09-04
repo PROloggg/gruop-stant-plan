@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Календарь: Сентябрь — Ноябрь</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script defer src="app.js"></script>
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="title">
+        Подготовка станта: Сентябрь — Ноябрь <span id="yearLabel"></span>
+      </div>
+      <div class="actions">
+        <button id="exportBtn" type="button">Экспорт JSON</button>
+        <label class="import-label">
+          Импорт JSON
+          <input id="importInput" type="file" accept="application/json,.json" />
+        </label>
+      </div>
+    </header>
+
+    <main id="calendarRoot" class="calendar-root" aria-live="polite"></main>
+
+    <footer class="footnote">
+      <p>
+        Подсветка: понедельник, среда, пятница и воскресенье — светло‑голубые; 3–4 ноября — светло‑красные. Заметки сохраняются локально в браузере и могут быть экспортированы/импортированы как JSON.
+      </p>
+    </footer>
+  </body>
+  </html>
+
