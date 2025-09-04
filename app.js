@@ -44,10 +44,10 @@
     return `${y}-${m}-${day}`;
   }
 
-  // Путь к JSON в корне сайта
+  // Путь к JSON рядом со страницей (работает для GitHub Pages подпути)
   function getNotesJsonUrl() {
-    // Всегда берём из корня домена
-    return '/calendar-notes.json';
+    // Относительный путь резолвится к текущему каталогу страницы
+    return 'calendar-notes.json';
   }
 
   // Загружаем JSON с заметками и определяем год из файла
